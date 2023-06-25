@@ -2,10 +2,7 @@
   "name": "code-transfor-text_vue",
   "version": "1.0.0",
   "description": "基于vue的汉字提取指令。将码对应的汉字提取并返回",
-  "main": "dist/index.min.js",
-  "files": [
-    "dist"
-  ],
+  "main": "src/index.js",
   "scripts": {
     "test": "npm run test"
   },
