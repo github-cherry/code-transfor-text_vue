@@ -35,7 +35,7 @@ Vue.use(CodeTransforText)
 **使用：**
 
 ```
-codeTransforText(dictionaries, config);
+CodeTransforText(dictionaries, config);
 ```
 
 | 参数         | 格式          | 说明                             | 案例                                                         | 默认值                           |
@@ -51,18 +51,18 @@ codeTransforText(dictionaries, config);
 
 1. ```html
    <div>
-     供电性质：{{ powerType | codeTransforText(dropdowns.nature) }}
+     供电性质：{{ powerType | CodeTransforText(dropdowns.nature) }}
    </div>
    
 2. ```html
    <div>
-     隶属区域：{{ constructionUuid | codeTransforText(dropdowns.constructionUuid, {name:"construction",value: "uuid"}) }}
+     隶属区域：{{ constructionUuid | CodeTransforText(dropdowns.constructionUuid, {name:"construction",value: "uuid"}) }}
    </div>
    ```
 
 3. ```javascript
    let chargePort = "1,2,5,7";
-   console.log(this.$options.filters.codeTransforText(chargePort, this.dropdowns.chargePort));
+   console.log(this.$options.filters.CodeTransforText(chargePort, this.dropdowns.chargePort));
    ```
 
 
