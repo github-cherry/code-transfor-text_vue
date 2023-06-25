@@ -1,5 +1,5 @@
 # code-transfor-text_vue
-基于vue的汉字提取过滤器。将码对应的汉字提取并返回。支持单码和多码提取
+基于vue的字典码转译提取过滤器。将码对应的业务名称提取并返回
 
 
 
@@ -16,7 +16,6 @@
 ```
 npm install code-transfor-text_vue
 ```
-
 
 **引入：**
 
@@ -40,7 +39,7 @@ CodeTransforText(dictionaries, config);
 
 | 参数         | 格式          | 说明                             | 案例                                                         | 默认值                           |
 | ------------ | ------------- | -------------------------------- | ------------------------------------------------------------ | -------------------------------- |
-| Value        | String        | 要汉化的码，如果是多值就用`,`隔开 | "1"或者“1,3,5,7”                                             | 必传                             |
+| value        | String        | 要汉化的码，如果是多值就用`,`隔开 | `"1"` 或者 `“1,3,5,7”`                                     | 必传                             |
 | dictionaries | [{},{},{}...] | 要转汉字的合集                   | [{ name: "龙泽", value: "001" }, { name: "西二旗", value: "002" }, { name: "上地", value: "003" }] | 必传                             |
 | config       | {}            | 配置dictionaries的名称和取值字段 | { name: "station_name", value: "station_value" }             | { name: "name", value: "value" } |
 
