@@ -1,0 +1,19 @@
+{
+  "name": "code-transfor-text_vue",
+  "version": "1.0.0",
+  "description": "基于vue的汉字提取指令。将码对应的汉字提取并返回",
+  "main": "dist/index.min.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/frontend-cherry/code-transfor-text_vue"
+  },
+  "keywords": [],
+  "author": "quanyi",
+  "license": "MIT"
+}
