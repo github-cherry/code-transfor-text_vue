@@ -3,12 +3,27 @@
   "version": "1.0.0",
   "description": "基于vue的字典码转译提取过滤器。将码对应的业务名称提取并返回",
   "main": "src/index.js",
-  "scripts": {},
+  "module": "src/index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "files": [
+    "dist/"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/github-cherry/code-transfor-text_vue"
   },
-  "keywords": ["过滤器","","vue filter","filter","字典提取"],
+  "keywords": [
+    "过滤器",
+    "vue filter",
+    "filter",
+    "字典提取"
+  ],
+  "homepage": "https://github.com/github-cherry/code-transfor-text_vue#readme",
   "author": "quanyi",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": "https://github.com/github-cherry/code-transfor-text_vue/issues",
+  "unpkg": "dist/index.js",
+  "jsdelivr": "dist/index.js"
 }
