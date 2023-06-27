@@ -11,11 +11,13 @@
 <div v-else-if="code===3">上地</div>
 <div v-else-if="code===4">沙河</div>
 <div v-else="code===5">八宝山</div>
+...
+<div v-else="code===99">月牙山</div>
 ```
 
-快放弃这么臃肿的代码吧，使用`code-transfor-text_vue`过滤器
+有多少码就写了多少遍，重点是写死的不灵活。快放弃这么臃肿的代码吧
 
-```
+```html
 <div>地址：{{ address | CodeTransforText(dropdowns.address) }}</div>
 ```
 
