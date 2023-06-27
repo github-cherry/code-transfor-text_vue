@@ -3,11 +3,23 @@
 
 
 
+大家是不是见到过这种代码：
 
+```html
+<div v-if="code===1">龙泽</div>
+<div v-else-if="code===2">西二旗</div>
+<div v-else-if="code===3">上地</div>
+<div v-else-if="code===4">沙河</div>
+<div v-else="code===5">八宝山</div>
+```
 
+快放弃这么臃肿的代码吧，使用`code-transfor-text_vue`过滤器
 
+```
+<div>地址：{{ address | CodeTransforText(dropdowns.address) }}</div>
+```
 
-
+一行就搞定，这多简洁
 
 
 
@@ -40,7 +52,7 @@ CodeTransforText(dictionaries, config);
 | 参数         | 格式          | 说明                             | 案例                                                         | 默认值                           |
 | ------------ | ------------- | -------------------------------- | ------------------------------------------------------------ | -------------------------------- |
 | value        | String        | 要汉化的码，如果是多值就用`,`隔开 | `"1"` 或者 `“1,3,5,7”`                                     | 必传                             |
-| dictionaries | [{},{},{}...] | 要转汉字的合集                   | [{ name: "龙泽", value: "001" }, { name: "西二旗", value: "002" }, { name: "上地", value: "003" }] | 必传                             |
+| dictionaries | [{},{},{}...] | 要转汉字的合集                   | [{ name: "龙泽", value: "1" }, { name: "西二旗", value: "2" }, { name: "上地", value: "3" },{ name: "沙河", value: "4" },{ name: "八宝山", value: "5" }] | 必传                             |
 | config       | {}            | 配置dictionaries的名称和取值字段 | { name: "station_name", value: "station_value" }             | { name: "name", value: "value" } |
 
 
