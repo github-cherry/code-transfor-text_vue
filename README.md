@@ -1,5 +1,5 @@
 # code-transfor-text_vue
-基于vue的字典码转译提取过滤器。将码对应的业务名称提取并返回
+基于vue的字典码转译提取的[过滤器](https://blog.csdn.net/qq_42618566/article/details/107784878)。将码对应的业务名称提取并返回
 
 
 
