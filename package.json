@@ -1,6 +1,6 @@
 {
   "name": "code-transfor-text_vue",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "基于vue的字典码转译提取过滤器。将码对应的业务名称提取并返回",
   "main": "src/index.js",
   "module": "src/index.js",
@@ -25,5 +25,8 @@
   "license": "MIT",
   "bugs": "https://github.com/github-cherry/code-transfor-text_vue/issues",
   "unpkg": "dist/index.js",
-  "jsdelivr": "dist/index.js"
+  "jsdelivr": "dist/index.js",
+  "dependencies": {
+    "webpack": "^5.88.1"
+  }
 }
