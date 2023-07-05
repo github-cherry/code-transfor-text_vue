@@ -35,15 +35,17 @@ npm install code-transfor-text_vue
 
 ```javascript
 import CodeTransforText from 'code-transfor-text_vue'
+或者
+import {CodeTransforText} from 'code-transfor-text_vue'
 ```
-
 
 **注册：**
 
 ```javascript
 Vue.use(CodeTransforText)
+或者
+.vue文件里  filters:{CodeTransforText}
 ```
-
 
 **使用：**
 
