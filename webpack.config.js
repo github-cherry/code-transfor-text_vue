@@ -1,8 +1,12 @@
 const path = require('path');
+const CompressionWebpackPlugin = require('compression-webpack-plugin');
 
 module.exports = {
   mode: 'production',
   entry: './src/index.js',
+  plugins: [
+    new CompressionWebpackPlugin()
+  ],
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'index.js',
